@@ -30,7 +30,7 @@ _____________________________________________________________
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
 5. Conferir os dados:
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
-6. Introduzir a parte descodificadora do nosso código:
+6. Introduzir a parte descodificadora do nosso código na secção PAYLOAD:
 ```
  function Decoder(bytes, port) {
   // Decode an uplink message from a buffer
