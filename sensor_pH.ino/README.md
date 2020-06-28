@@ -1,6 +1,6 @@
 ## Informação
 Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário , o código que está nesta ultima parte será modificado ligeiramente e adaptado ao sensor em causa.  
-**Sensor Usado: `DFROBOT - SEN0161`**
+**Sensor Usado: `DFROBOT - SEN0161`** -> [Mais Documentação](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_)
 ________________________________
 
 ## Explicação do codigo:
