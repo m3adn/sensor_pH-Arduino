@@ -3,7 +3,7 @@ Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário 
 ________________________________
 
 ## Explicação do codigo:
-Esta parte serve para ligar  o MKR atravês do LoRa à gateway, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma.
+Esta parte serve para ligar  o MKR atravês do LoRa à gateway, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Para tal usamos o appEui e AppKey fornecidos pela gateway.
 ```
 #include <MKRWAN.h> 
 LoRaModem modem(Serial);
@@ -55,14 +55,14 @@ void loop(void)
     delay(10000);
     }
 ```
-Esta parte serve para ler os dados do sensor:
+Esta parte serve para ler os dados do sensor. De notar que temos a função `averagearray`. A mesma serve para "calibrar" de uma certa maneira o sensor e fazer com que o valor final imprimido e enviado seja mais preciso.
 ```
 
 #define SensorPin A0            //Saida analogica no pino 0 para o sensor pH
 #define Offset 0.00            //Compensação do desvio
 #define samplingInterval 20
 #define printInterval 800
-#define ArrayLenth  40    //times of collection
+#define ArrayLenth  40    
 double averagearray(int* arr, int number);
 int pHArray[ArrayLenth];   //Guarda o valor medio do sensor.
 int pHArrayIndex=0;
@@ -88,7 +88,51 @@ void loop(void)
     Serial.println(pHValue,2);
         printTime=millis();
   }
+  
+ 
 ```
+Função averagearray mencionada anteriormente:
+´´´
+double averagearray(int* arr, int number){
+  int i;
+  int max,min;
+  double avg;
+  long amount=0;
+  if(number<=0){
+    Serial.println("Erro no numero. Introduza um valor positivo.!/n");
+    return 0;
+  }
+  if(number<5){   //Menor que 5.
+    for(i=0;i<number;i++){
+      amount+=arr[i];
+    }
+    avg = amount/number;
+    return avg;
+  }else{
+    if(arr[0]<arr[1]){
+      min = arr[0];max=arr[1];
+    }
+    else{
+      min=arr[1];max=arr[0];
+    }
+    for(i=2;i<number;i++){
+      if(arr[i]<min){
+        amount+=min;        //arr<min
+        min=arr[i];
+      }else {
+        if(arr[i]>max){
+          amount+=max;    //arr>max
+          max=arr[i];
+        }else{
+          amount+=arr[i]; //min<=arr<=max
+        }
+      }//if
+    }//for
+    avg = (double)amount/(number-2);
+  }//if
+  return avg;
+}
+´´´
 Como não podemos enviar valores em float temos que encontrar uma maneira de passar para inteiros. Resolvi em multiplicar por 1000 e depois multiplicar por 3 (serve como chave para que se alguém quiser intercetar os dados que não consiga decifrar).   
 `pHValue = pHValue*1000*3;`
 
