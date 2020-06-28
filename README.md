@@ -1,5 +1,5 @@
 ## Informação:
-Projeto realizado no ambito da cadeira `Instrumentação e Sensores`  
+**Projeto realizado no ambito da cadeira `Instrumentação e Sensores`  
 Professor: `Antonio Valente`  
 Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`  
 _____________________________________________________________
