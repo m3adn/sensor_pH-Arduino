@@ -1,5 +1,6 @@
 ## Informação
-Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário , o código que está nesta ultima parte será modificado ligeiramente e adaptado ao sensor em causa.
+Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário , o código que está nesta ultima parte será modificado ligeiramente e adaptado ao sensor em causa.  
+**Sensor Usado: `DFROBOT - SEN0161`**
 ________________________________
 
 ## Explicação do codigo:
@@ -138,7 +139,7 @@ Como não podemos enviar valores em float temos que encontrar uma maneira de pas
 
 Passamos para hexadecimal os dados e fazemos o respetivo print para nos assegurarmos que o valor hexadecimal enviado é o mesmo que é recebido:    
 ```
- txBuffer[0] = ((int)pHValue >> 8) & 0xff;
+    txBuffer[0] = ((int)pHValue >> 8) & 0xff;
     txBuffer[1]  = (int)pHValue & 0xff;
 
     Serial.println(txBuffer[0], HEX);
