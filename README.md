@@ -19,3 +19,7 @@ _____________________________________________________________
 
 ## Configuração:
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing2.png)
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
