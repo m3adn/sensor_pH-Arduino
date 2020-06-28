@@ -10,7 +10,7 @@ _____________________________________________________________
 
 ## Introdução:
 Equipamento usado: 
-  - [Arduino MKR1300][https://store.arduino.cc/arduino-mkr-wan-1300-lora-connectivity-1414] 
+  - [Arduino MKR1300](https://store.arduino.cc/arduino-mkr-wan-1300-lora-connectivity-1414)
   - [Sensor pH](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) -> Marca: **`DfRobot | Modelo: SEN0161`** -> Para mais informação aceder o link anterior.
 
 Plataformas usadas:
