@@ -49,7 +49,7 @@ ________________________________________________________________
 2.Encontrar a divisão React:    
 ![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak5.png)
 3.Criar um react novo e alterar conforme quiser:     
-![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak6.png)
+![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak62.png)
 4.Resultado:    
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
 
