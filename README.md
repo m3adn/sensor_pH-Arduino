@@ -11,10 +11,10 @@ Equipamento usado:
   - Sensor pH -> **Marca:`DfRobot | Modelo: SEN0161`**
 
 Plataformas usadas:
-  - Arduino
-  - ThethingsNetwork
-  - Thingspeak
-  - Twitter
+  - [Arduino](https://www.arduino.cc)
+  - [ThethingsNetwork](https://www.thethingsnetwork.org)
+  - [Thingspeak](https://thingspeak.com)
+  - [Twitter](https://twitter.com/home)
 
 _____________________________________________________________
 
