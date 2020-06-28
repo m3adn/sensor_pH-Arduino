@@ -1,4 +1,4 @@
-[LORA](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/ezgif-5-9308055b7467.png)
+![LORA](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/ezgif-5-9308055b7467.png)
 ## Informação:
 **Universidade: `UTAD (Universidade de Trás os Montes e Alto Douro)`   
 Ano: `3º ANO`  
