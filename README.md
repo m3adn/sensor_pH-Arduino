@@ -47,7 +47,7 @@ ________________________________________________________________
 1. Encontrar divisão ThingTweet na categora Apps e interligar as contas:    
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak7.png)
 2.Encontrar a divisão React:    
-![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak5.png)
+![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak52.png)
 3.Criar um react novo e alterar conforme quiser:     
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak62.png)
 4.Resultado:    
