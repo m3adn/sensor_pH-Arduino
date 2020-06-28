@@ -30,6 +30,29 @@ _____________________________________________________________
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
 5. Conferir os dados:
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
+6. Introduzir a parte descodificadora do nosso código:
+```
+ function Decoder(bytes, port) {
+  // Decode an uplink message from a buffer
+  // (array) of bytes to an object of fields.
+  var decoded = {};
+  
+ 
+    decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2);
+    decoded.Humidity = (((bytes[2]) << 8| bytes[3])).toFixed(2);
+    decoded.ecValue = (((bytes[4]) << 8| bytes[5])*2/(1000));
+    decoded.Temperature = (((bytes[6]) << 8| bytes[7])).toFixed(2);
+  
+
+  return {
+    field1: decoded.Temperature,
+    field2: decoded.Humidity,
+    field4: decoded.ecValue,
+    field3: decoded.pHValue
+  }
+}
+```
+![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)
 
 _______________________________________________________________
 
