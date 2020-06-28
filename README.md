@@ -1,7 +1,7 @@
 ## Informação:
 **Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
 Professor: `Antonio Valente`  
-Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`
+Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`  
 Nota: Para ver o relatório do código do Arduino , por favor passar na pasta: `sensor_pH`**
 
 _____________________________________________________________
