@@ -18,3 +18,4 @@ Plataformas usadas:
 _____________________________________________________________
 
 ## Configuração:
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
