@@ -3,7 +3,7 @@ Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário 
 ________________________________
 
 ## Explicação do codigo:
-Esta parte serve para ligar  o MKR atravês do LoRa à gateway, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Para tal usamos o appEui e AppKey fornecidos pela gateway.
+Esta parte serve para ligar o MKR atravês do LoRa à gateway, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Usamos o appEui e AppKey fornecidos pela ThethingsNetwork para realizar a ligação à nossa aplicação na plataforma.
 ```
 #include <MKRWAN.h> 
 LoRaModem modem(Serial);
@@ -55,7 +55,7 @@ void loop(void)
     delay(10000);
     }
 ```
-Esta parte serve para ler os dados do sensor. De notar que temos a função `averagearray`. A mesma serve para "calibrar" de uma certa maneira o sensor e fazer com que o valor final imprimido e enviado seja mais preciso.
+Esta parte serve para ler os dados do sensor e imprimir os mesmos. De notar que temos a função `averagearray`. A mesma serve para "calibrar" de uma certa maneira o sensor e fazer com que o valor final imprimido e enviado seja mais preciso.
 ```
 
 #define SensorPin A0            //Saida analogica no pino 0 para o sensor pH
@@ -64,7 +64,7 @@ Esta parte serve para ler os dados do sensor. De notar que temos a função `ave
 #define printInterval 800
 #define ArrayLenth  40    
 double averagearray(int* arr, int number);
-int pHArray[ArrayLenth];   //Guarda o valor medio do sensor.
+int pHArray[ArrayLenth];   //Guarda o valor medio lido.
 int pHArrayIndex=0;
 
 void loop(void)
@@ -80,7 +80,7 @@ void loop(void)
       pHValue = 3.5*voltage+Offset;
       samplingTime=millis();
   }
-  if(millis() - printTime > printInterval)   //A cada 800 milisegundos imprimir o valor da tensão e pH.
+  if(millis() - printTime > printInterval)   //A cada 800 milisegundos imprimie o valor da tensão e pH.
   {
     Serial.print("Voltage:");
         Serial.print(voltage,2);
@@ -92,7 +92,7 @@ void loop(void)
  
 ```
 Função averagearray mencionada anteriormente:
-´´´
+```
 double averagearray(int* arr, int number){
   int i;
   int max,min;
@@ -132,7 +132,7 @@ double averagearray(int* arr, int number){
   }//if
   return avg;
 }
-´´´
+```
 Como não podemos enviar valores em float temos que encontrar uma maneira de passar para inteiros. Resolvi em multiplicar por 1000 e depois multiplicar por 3 (serve como chave para que se alguém quiser intercetar os dados que não consiga decifrar).   
 `pHValue = pHValue*1000*3;`
 
