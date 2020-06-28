@@ -2,8 +2,7 @@
 **Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
 Professor: `Antonio Valente`  
 Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`**
-Nota: Para ver o relatório do código do Arduino , por favor passar na pasta: `sensor_pH` onde está a parte do codigo correspondente ao arduino.
-
+Nota: Para ver a explicação do código do Arduino , por favor passar para a pasta: `sensor_pH.ino`.
 _____________________________________________________________
 
 ## Introdução:
