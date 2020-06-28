@@ -34,8 +34,8 @@ _____________________________________________________________
 _______________________________________________________________
 
 ## Configuração(ThingSpeak):
-1. Fazer login na pagina principal  
-2. Encontrar a divisão MyChanels na Categoria Chanels:
+1. Fazer login na pagina principal    
+2. Encontrar a divisão MyChanels na Categoria Chanels:  
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak1.png)
 ![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak2.png)
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak3.png)
