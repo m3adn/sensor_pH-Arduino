@@ -18,8 +18,13 @@ Plataformas usadas:
 _____________________________________________________________
 
 ## Configuração:
+1. Encontrar a divisão Applications em Consoles:
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
-![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing2.png)
-![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
-![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
-![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
+2. Criar uma aplicação:
+![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing2.png)
+3. Conferir os dados:
+![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
+4. Registar um dispositivo:
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
+5. Conferir is dados:
+![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
