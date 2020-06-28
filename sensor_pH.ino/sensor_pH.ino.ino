@@ -71,11 +71,11 @@ void loop(void)
     Serial.println(pHValue,2);
         printTime=millis();
   }
-    pHValue = pHValue*1000;
+    pHValue = pHValue*1000*3;
     txBuffer[0] = ((int)pHValue >> 8) & 0xff;
     txBuffer[1]  = (int)pHValue & 0xff;
 
-        modem.beginPacket();
+    modem.beginPacket();
     modem.write(txBuffer[0]);
     modem.write(txBuffer[1]);
   
@@ -97,7 +97,7 @@ double averagearray(int* arr, int number){
   double avg;
   long amount=0;
   if(number<=0){
-    Serial.println("Erro no numero. Introduza um positivo.!/n");
+    Serial.println("Erro no numero. Introduza um valor positivo.!/n");
     return 0;
   }
   if(number<5){   //Menor que 5.
