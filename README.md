@@ -30,7 +30,9 @@ _____________________________________________________________
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
 5. Conferir os dados:
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
-6. Introduzir a parte descodificadora do nosso código na secção PAYLOAD:
+6. Copiar O nosso AppEui e AppKey para o codigo do Arduino:
+![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing7.png)
+7. Introduzir a parte descodificadora do nosso código na secção PAYLOAD:
 ```
  function Decoder(bytes, port) {
   // Decode an uplink message from a buffer
@@ -52,8 +54,8 @@ _____________________________________________________________
   }
 }
 ```
-![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)   
-7. Interligar a conta do Thenetworkthings com a conta do ThingsPeak:  
+![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)   
+8. Interligar a conta do Thenetworkthings com a conta do ThingsPeak:  
 Para tal tem que se clicar na divisão "Integrations" e de seguida clicar a aplicação do ThingSpeak para associar as contas.
 
 _______________________________________________________________
