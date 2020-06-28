@@ -4,7 +4,7 @@ Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário 
 ________________________________
 
 ## Explicação do codigo:
-Esta parte serve para ligar o MKR atravês do LoRa à gateway, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Usamos o appEui e AppKey fornecidos pela ThethingsNetwork para realizar a ligação à nossa aplicação na plataforma.
+Esta parte serve para ligar o MKR1300 atravês do módulo LoRa à gateway, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Usamos o appEui e AppKey fornecidos pela ThethingsNetwork para realizar a ligação à nossa aplicação na plataforma.
 ```
 #include <MKRWAN.h> 
 LoRaModem modem(Serial);
@@ -134,7 +134,7 @@ double averagearray(int* arr, int number){
   return avg;
 }
 ```
-Como não podemos enviar valores em float temos que encontrar uma maneira de passar para inteiros. Resolvi em multiplicar por 1000 e depois multiplicar por 3 (serve como chave para que se alguém quiser intercetar os dados que não consiga decifrar).   
+Como não podemos enviar valores em float temos que encontrar uma maneira de passar para inteiros. Resolvi em multiplicar por 1000 e depois multiplicar por 3(serve como chave para que se alguém quiser intercetar os dados que não consiga decifrar sem fazer esta conta).   
 `pHValue = pHValue*1000*3;`
 
 Passamos para hexadecimal os valores e mandamos o respetivo print para a Serial para nos assegurarmos que o valor hexadecimal enviado é o mesmo que o recebido:    
