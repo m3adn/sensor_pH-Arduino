@@ -40,9 +40,9 @@ void setup(void)
    
 void loop(void)
 {  
-    modem.beginPacket();
-    modem.write(txBuffer[0]);
-    modem.write(txBuffer[1]);
+    
+    modem.write(aqui_podiam_estar_valores);
+    modem.write(aqui_podiam_estar_valores);
   
    int err;
     err = modem.endPacket(txBuffer);
@@ -137,7 +137,7 @@ double averagearray(int* arr, int number){
 Como não podemos enviar valores em float temos que encontrar uma maneira de passar para inteiros. Resolvi em multiplicar por 1000 e depois multiplicar por 3 (serve como chave para que se alguém quiser intercetar os dados que não consiga decifrar).   
 `pHValue = pHValue*1000*3;`
 
-Passamos para hexadecimal os dados e fazemos o respetivo print para nos assegurarmos que o valor hexadecimal enviado é o mesmo que é recebido:    
+Passamos para hexadecimal os valores e mandamos o respetivo print para a Serial para nos assegurarmos que o valor hexadecimal enviado é o mesmo que o recebido:    
 ```
     txBuffer[0] = ((int)pHValue >> 8) & 0xff;
     txBuffer[1]  = (int)pHValue & 0xff;
@@ -146,4 +146,9 @@ Passamos para hexadecimal os dados e fazemos o respetivo print para nos assegura
     Serial.println(txBuffer[1], HEX);
     
 
+```
+Como já temos o valor em hexadecimal , podemos mandá-lo para a cloud. Para tal , não podemos enviar a array `txBuffer` por inteiro. Temos que mandar os valores guardados em posições especificas da memória:
+```
+    modem.write(txBuffer[0]);
+    modem.write(txBuffer[1]);
 ```
