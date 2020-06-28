@@ -8,7 +8,7 @@ _____________________________________________________________
 ## Introdução:
 Equipamento usado: 
   - Arduino MKR1300 
-  - Sensor pH -> Marca:DfRobot | Modelo: SEN0161  
+  - Sensor pH -> **Marca:`DfRobot | Modelo: SEN0161`**
 
 Plataformas usadas:
   - Arduino
@@ -18,7 +18,7 @@ Plataformas usadas:
 
 _____________________________________________________________
 
-## Configuração(ThethingsNetwork):
+## Configuração (ThethingsNetwork):
 1. Encontrar a divisão Applications em Consoles:
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
 2. Criar uma aplicação:
