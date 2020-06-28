@@ -42,7 +42,7 @@ _____________________________________________________________
   var decoded = {};
   
  
-    **decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2);**
+    decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2); //Corresponde ao nosso sensor.
     decoded.Humidity = (((bytes[2]) << 8| bytes[3])).toFixed(2);
     decoded.ecValue = (((bytes[4]) << 8| bytes[5])*2/(1000));
     decoded.Temperature = (((bytes[6]) << 8| bytes[7])).toFixed(2);
@@ -51,8 +51,8 @@ _____________________________________________________________
   return {
     field1: decoded.Temperature,
     field2: decoded.Humidity,
-    **field3: decoded.pHValue**
-    field4: decoded.ecValue,
+    field3: decoded.pHValue, // Corresponde ao nosso sensor.
+    field4: decoded.ecValue
   }
 }
 ```
@@ -60,7 +60,7 @@ _____________________________________________________________
 8. Verificar se os valores recebidos e enviados são os mesmos:    
 ![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing88.png)  
 ![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing99.png)  
-Como se pode ver , na secção data da segunda imagem vemos o mesmo valor em hexadecimal que está no Serial do arduino, ou seja o valor é enviado e recebido corretamente. Podemos ver também no field 3 que o valor foi descodificado bem, sendo este o valor inicial enviado pelo arduino.   
+Como se pode ver , na secção "data" da segunda imagem vemos o mesmo valor em hexadecimal que está no Serial do arduino, ou seja o valor é enviado e recebido corretamente. Podemos ver também no field 3 que o valor foi descodificado bem, sendo este o valor inicial enviado pelo arduino.   
 9. Interligar a conta do Thenetworkthings com a conta do ThingSpeak:  
 Para tal tem que se clicar na divisão "Integrations" e de seguida clicar a aplicação do ThingSpeak para associar as contas.
 
