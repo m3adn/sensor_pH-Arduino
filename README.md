@@ -39,7 +39,7 @@ _______________________________________________________________
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak12.png)
 3. Criar um novo canal:  
 ![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak22.png)
-4. Se for necessário alterar algum field apos a configuração inicial, acessar a categoria Settings na pagina do proprio canal:  
+4. Se for necessário alterar algum field apos a configuração inicial, acessar a categoria *Settings* na pagina do proprio canal:  
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak32.png)
 ________________________________________________________________
 
