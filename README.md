@@ -7,4 +7,4 @@ _____________________________________________________________
 # Introdução:
 Equipamento usado: 
 **1. Arduino MKR1300 
-2. Sensor pH -> Marca:DfRobot|Modelo: SEN0161**
+  2. Sensor pH -> Marca:DfRobot|Modelo: SEN0161**
