@@ -9,14 +9,14 @@
 #define Offset 0.00            //Compensação do desvio
 #define samplingInterval 20
 #define printInterval 800
-#define ArrayLenth  40    //times of collection
+#define ArrayLenth  40    
 
 LoRaModem modem(Serial);
 
 double averagearray(int* arr, int number);
 
 uint8_t txBuffer[2];
-int pHArray[ArrayLenth];   //Guarda o valor medio do sensor.
+int pHArray[ArrayLenth];   //Guarda o valor medio da medição
 int pHArrayIndex=0;
 
 const char *appEui = "70B3D57ED0030FEA";
@@ -59,11 +59,11 @@ void loop(void)
   {
       pHArray[pHArrayIndex++]=analogRead(SensorPin);
       if(pHArrayIndex==ArrayLenth)pHArrayIndex=0;
-      voltage = averagearray(pHArray, ArrayLenth)*5.0/1024;
+      voltage = averagearray(pHArray, ArrayLenth)*5.0/1024; //Transforme os valores da tensão em valores de pH (ajuta a escala)
       pHValue = 3.5*voltage+Offset;
       samplingTime=millis();
   }
-  if(millis() - printTime > printInterval)   //A cada 800 milisegundos imprimir o valor da tensão e pH.
+  if(millis() - printTime > printInterval)   //A cada 800 milisegundos imprimie o valor da tensão e pH.
   {
     Serial.print("Voltage:");
         Serial.print(voltage,2);
