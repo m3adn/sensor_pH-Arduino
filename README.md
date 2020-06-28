@@ -45,11 +45,11 @@ ________________________________________________________________
 
 ## Configuração(ThingSpeak -> Twitter):
 1. Encontrar divisão ThingTweet na categora Apps e interligar as contas:    
-![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak7.png)
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak7.png)
 2.Encontrar a divisão React:    
-![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak5.png)
-3.Criar um react novo e alterar conforme quiser:   
-![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak6.png)
-4.Resultado:  
-![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
+![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak5.png)
+3.Criar um react novo e alterar conforme quiser:     
+![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak6.png)
+4.Resultado:    
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
 
