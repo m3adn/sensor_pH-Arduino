@@ -36,12 +36,12 @@ _______________________________________________________________
 ## Configuração(ThingSpeak):
 1. Fazer login na pagina principal  
 2. Encontrar a divisão MyChanels na Categoria Chanels:
-![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
-![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing2.png)
-![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
-![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
-![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
-![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)
-![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing7.png)
-![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing8.png)
-![Passo9](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing9.png)
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak1.png)
+![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak2.png)
+![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak3.png)
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak4.png)
+![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak5.png)
+![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak6.png)
+![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak7.png)
+![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak8.png)
+![Passo9](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
