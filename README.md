@@ -37,16 +37,19 @@ _______________________________________________________________
 1. Fazer login na pagina principal    
 2. Encontrar a divisão MyChanels na Categoria Chanels:  
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak1.png)
-3. Criar um novo canal:
+3. Criar um novo canal:  
 ![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak2.png)
-4. Se for necessário alterar algum field apos a configuração inicial, acessar a categoria Settings na pagina do proprio canal.
+4. Se for necessário alterar algum field apos a configuração inicial, acessar a categoria Settings na pagina do proprio canal:  
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak3.png)
 ________________________________________________________________
 
 ## Configuração(ThingSpeak -> Twitter):
-![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak4.png)
+1. Encontrar divisão ThingTweet na categora Apps e interligar as contas:   
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak7.png)
+2.Encontrar a divisão React:   
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak5.png)
+3.Criar um react novo e alterar conforme quiser:  
 ![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak6.png)
-![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak7.png)
-![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak8.png)
-![Passo9](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
+4.Resultado:  
+![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
+
