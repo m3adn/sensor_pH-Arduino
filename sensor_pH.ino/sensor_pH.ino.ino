@@ -75,6 +75,10 @@ void loop(void)
     txBuffer[0] = ((int)pHValue >> 8) & 0xff;
     txBuffer[1]  = (int)pHValue & 0xff;
 
+    Serial.println(txBuffer[0], HEX);
+    Serial.println(txBuffer[1], HEX);
+    
+
     modem.beginPacket();
     modem.write(txBuffer[0]);
     modem.write(txBuffer[1]);
