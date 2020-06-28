@@ -55,11 +55,11 @@ _____________________________________________________________
 }
 ```
 ![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)  
-8. Verificar se o valor recebido e enviado é os mesmo:    
+8. Verificar se os valores recebidos e enviados são os mesmos:    
 ![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing88.png)  
-![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing88.png)  
-
-9. Interligar a conta do Thenetworkthings com a conta do ThingsPeak:  
+![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing99.png)  
+Como se pode ver , na secção data da segunda imagem vemos o mesmo valor em hexadecimal que está no Serial do arduino, ou seja o valor é enviado e recebido corretamente. Podemos ver também no field 3 que o valor foi descodificado bem, sendo este o valor inicial enviado pelo arduino.   
+9. Interligar a conta do Thenetworkthings com a conta do ThingSpeak:  
 Para tal tem que se clicar na divisão "Integrations" e de seguida clicar a aplicação do ThingSpeak para associar as contas.
 
 _______________________________________________________________
@@ -72,6 +72,10 @@ _______________________________________________________________
 ![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak22.png)
 4. Se for necessário alterar algum field apos a configuração inicial, acessar a categoria *Settings* na pagina do proprio canal:  
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak32.png)
+5. Verificar se o canal recebe os valores:    
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak13.png)  
+Como se pode ver , tendo apenas o sensor de pH ligado , sendo este associado ao field3 podemos confirmar que o plataforma está a receber os valores enviados pelo ThethingsNetwork.
+
 ________________________________________________________________
 
 ## Configuração(ThingSpeak -> Twitter):
