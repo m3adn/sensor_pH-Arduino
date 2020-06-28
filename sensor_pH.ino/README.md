@@ -92,7 +92,7 @@ void loop(void)
   
  
 ```
-Função averagearray mencionada anteriormente:
+Função `averagearray` mencionada anteriormente:
 ```
 double averagearray(int* arr, int number){
   int i;
@@ -137,7 +137,7 @@ double averagearray(int* arr, int number){
 Como não podemos enviar valores em float temos que encontrar uma maneira de passar para inteiros. Resolvi em multiplicar por 1000 e depois multiplicar por 3(serve como chave para que se alguém quiser intercetar os dados que não consiga decifrar sem fazer esta conta).   
 `pHValue = pHValue*1000*3;`
 
-Passamos para hexadecimal os valores e mandamos o respetivo print para a Serial para nos assegurarmos que o valor hexadecimal enviado é o mesmo que o recebido:    
+Passamos para hexadecimal os valores e mandamos o respetivo Print para a Serial do arduinoo para nos assegurarmos que o valor hexadecimal enviado é o mesmo que o recebido:    
 ```
     txBuffer[0] = ((int)pHValue >> 8) & 0xff;
     txBuffer[1]  = (int)pHValue & 0xff;
@@ -147,7 +147,7 @@ Passamos para hexadecimal os valores e mandamos o respetivo print para a Serial 
     
 
 ```
-Como já temos o valor em hexadecimal , podemos mandá-lo para a cloud. Para tal , não podemos enviar a array `txBuffer` por inteiro. Temos que mandar os valores guardados em posições especificas da memória:
+Como já temos o valor em hexadecimal , podemos mandá-lo para a cloud. Para tal , não podemos enviar a array `txBuffer` por inteiro. Temos que mandar os valores guardados em posições especificas da memória senão o valor a receber pela cloud será do Array inteiro:
 ```
     modem.write(txBuffer[0]);
     modem.write(txBuffer[1]);
