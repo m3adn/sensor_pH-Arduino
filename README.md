@@ -51,5 +51,5 @@ ________________________________________________________________
 3.Criar um react novo e alterar conforme quiser:     
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak62.png)
 4.Resultado:    
-![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak9.png)
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/speak92.png)
 
