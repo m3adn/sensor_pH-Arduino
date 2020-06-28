@@ -1,7 +1,9 @@
 ## Informação:
-**Projeto realizado no ambito da cadeira `Instrumentação e Sensores`  
+**Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
 Professor: `Antonio Valente`  
-Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`**
+Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`
+Nota: Para ver o relatório do código do Arduino , por favor passar na pasta: `sensor_pH`**
+
 _____________________________________________________________
 
 ## Introdução:
@@ -26,5 +28,5 @@ _____________________________________________________________
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
 4. Registar um dispositivo:
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
-5. Conferir is dados:
+5. Conferir os dados:
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
