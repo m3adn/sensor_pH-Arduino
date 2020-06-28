@@ -2,7 +2,8 @@
 **Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
 Professor: `Antonio Valente`  
 Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`**  
-Nota: Para ver a explicação do código do Arduino , por favor passar para a pasta: `sensor_pH.ino`.
+Nota: Para ver a explicação do código do Arduino , por favor passar para a pasta: `sensor_pH.ino`.   
+Nota2: Como este projeto vai servir para outra cadeira , nomeadamente `Projeto do 3º ANO`, aqui estão presentes mais elementos/sensores que o necessário. Contudo , o objetivo proposto foi alcançado e a presença de mais elementos nas imagens não implicam o não cumprimento do mesmo.
 _____________________________________________________________
 
 ## Introdução:
