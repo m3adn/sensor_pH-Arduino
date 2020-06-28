@@ -19,7 +19,7 @@ Plataformas usadas:
 
 _____________________________________________________________
 
-## Configuração:
+## Configuração(ThethingsNetwork):
 1. Encontrar a divisão Applications em Consoles:
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
 2. Criar uma aplicação:
@@ -30,3 +30,18 @@ _____________________________________________________________
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
 5. Conferir os dados:
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
+
+_______________________________________________________________
+
+## Configuração(ThingSpeak):
+1. Fazer login na pagina principal  
+2. Encontrar a divisão MyChanels na Categoria Chanels:
+![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
+![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing2.png)
+![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
+![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
+![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
+![Passo6](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)
+![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing7.png)
+![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing8.png)
+![Passo9](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing9.png)
