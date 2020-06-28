@@ -29,7 +29,8 @@ _____________________________________________________________
 ![Passo2](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing2.png)
 3. Conferir os dados:
 ![Passo3](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing3.png)
-4. Registar um dispositivo:
+4. Registar um dispositivo:  
+Para registar será preciso correr um codigo no arduino para receber o deviceEui. Veja na pasta do arduino...   
 ![Passo4](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing4.png)
 5. Conferir os dados:
 ![Passo5](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing5.png)
