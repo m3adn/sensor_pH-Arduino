@@ -42,7 +42,7 @@ _____________________________________________________________
   var decoded = {};
   
  
-    decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2);
+    **decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2);**
     decoded.Humidity = (((bytes[2]) << 8| bytes[3])).toFixed(2);
     decoded.ecValue = (((bytes[4]) << 8| bytes[5])*2/(1000));
     decoded.Temperature = (((bytes[6]) << 8| bytes[7])).toFixed(2);
@@ -51,8 +51,8 @@ _____________________________________________________________
   return {
     field1: decoded.Temperature,
     field2: decoded.Humidity,
+    **field3: decoded.pHValue**
     field4: decoded.ecValue,
-    field3: decoded.pHValue
   }
 }
 ```
