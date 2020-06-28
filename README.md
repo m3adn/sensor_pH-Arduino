@@ -1,25 +1,27 @@
 ## Informação:
-**Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
+**Universidade: `UTAD (Universidade de Trás os Montes e Alto Douro)`   
+Ano: `3º ANO`  
+Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
 Professor: `Antonio Valente`  
-Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`  
-Nota: Para ver o relatório do código do Arduino , por favor passar na pasta: `sensor_pH`**
-
+Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`**  
+Nota: Para ver a explicação do código do Arduino , por favor passar para a pasta: `sensor_pH.ino`.   
+Nota2: Como este projeto vai servir para outra cadeira , nomeadamente `Projeto do 3º ANO`, aqui estão presentes mais elementos/sensores que o necessário. Contudo , o objetivo proposto foi alcançado e a presença de mais elementos nas imagens não implicam o não cumprimento do mesmo.
 _____________________________________________________________
 
 ## Introdução:
 Equipamento usado: 
-  - Arduino MKR1300 
-  - Sensor pH -> Marca:DfRobot | Modelo: SEN0161  
+  - [Arduino MKR1300](https://store.arduino.cc/arduino-mkr-wan-1300-lora-connectivity-1414)
+  - [Sensor pH](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) -> Marca: **`DfRobot | Modelo: SEN0161`** -> Para mais informação aceder o link anterior.
 
 Plataformas usadas:
-  - Arduino
-  - ThethingsNetwork
-  - Thingspeak
-  - Twitter
+  - [Arduino](https://www.arduino.cc)
+  - [ThethingsNetwork](https://www.thethingsnetwork.org)
+  - [Thingspeak](https://thingspeak.com)
+  - [Twitter](https://twitter.com/home)
 
 _____________________________________________________________
 
-## Configuração(ThethingsNetwork):
+## Configuração (ThethingsNetwork):
 1. Encontrar a divisão Applications em Consoles:
 ![Passo1](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing1.png)
 2. Criar uma aplicação:
@@ -40,7 +42,7 @@ _____________________________________________________________
   var decoded = {};
   
  
-    decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2);
+    decoded.pHValue = (((bytes[0]) << 8| bytes[1])/(1000*3)).toFixed(2); //Corresponde ao nosso sensor.
     decoded.Humidity = (((bytes[2]) << 8| bytes[3])).toFixed(2);
     decoded.ecValue = (((bytes[4]) << 8| bytes[5])*2/(1000));
     decoded.Temperature = (((bytes[6]) << 8| bytes[7])).toFixed(2);
@@ -49,8 +51,8 @@ _____________________________________________________________
   return {
     field1: decoded.Temperature,
     field2: decoded.Humidity,
-    field4: decoded.ecValue,
-    field3: decoded.pHValue
+    field3: decoded.pHValue, // Corresponde ao nosso sensor.
+    field4: decoded.ecValue
   }
 }
 ```
@@ -58,7 +60,7 @@ _____________________________________________________________
 8. Verificar se os valores recebidos e enviados são os mesmos:    
 ![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing88.png)  
 ![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing99.png)  
-Como se pode ver , na secção data da segunda imagem vemos o mesmo valor em hexadecimal que está no Serial do arduino, ou seja o valor é enviado e recebido corretamente. Podemos ver também no field 3 que o valor foi descodificado bem, sendo este o valor inicial enviado pelo arduino.   
+Como se pode ver , na secção "data" da segunda imagem vemos o mesmo valor em hexadecimal que está no Serial do arduino, ou seja o valor é enviado e recebido corretamente. Podemos ver também no field 3 que o valor foi descodificado bem, sendo este o valor inicial enviado pelo arduino.   
 9. Interligar a conta do Thenetworkthings com a conta do ThingSpeak:  
 Para tal tem que se clicar na divisão "Integrations" e de seguida clicar a aplicação do ThingSpeak para associar as contas.
 
