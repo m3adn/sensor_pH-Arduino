@@ -54,8 +54,12 @@ _____________________________________________________________
   }
 }
 ```
-![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)   
-8. Interligar a conta do Thenetworkthings com a conta do ThingsPeak:  
+![Passo7](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing6.png)  
+8. Verificar se o valor recebido e enviado é os mesmo:    
+![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing88.png)  
+![Passo8](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/thing88.png)  
+
+9. Interligar a conta do Thenetworkthings com a conta do ThingsPeak:  
 Para tal tem que se clicar na divisão "Integrations" e de seguida clicar a aplicação do ThingSpeak para associar as contas.
 
 _______________________________________________________________
