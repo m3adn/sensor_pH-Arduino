@@ -19,6 +19,7 @@ Plataformas usadas:
   - [ThethingsNetwork](https://www.thethingsnetwork.org)
   - [ThingSpeak](https://thingspeak.com)
   - [Twitter](https://twitter.com/home)
+  
 Perfis:
   - [ThingSpeak](https://thingspeak.com/channels/1089865)
   - [ThethingsNetwork](https://www.thethingsnetwork.org/u/m3adn)
