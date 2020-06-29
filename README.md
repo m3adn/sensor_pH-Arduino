@@ -1,9 +1,9 @@
 ![LORA](https://github.com/m3adn/sensor_pH-Arduino/blob/master/img/ezgif-5-9308055b7467.png)
 ## Informação:
-**Universidade: `UTAD (Universidade de Trás os Montes e Alto Douro)`   
+**Instituição: `UTAD (Universidade de Trás os Montes e Alto Douro)`   
 Ano: `3º ANO`  
 Projeto realizado no ambito da cadeira: `Instrumentação e Sensores`  
-Professor: `Antonio Valente`  
+Docente: `Antonio Valente`  
 Autores: `Daniel Andronic - 67723 e Filipe Santos - 66539`**  
 Nota: Para ver a explicação do código do Arduino , por favor passar para a pasta: `sensor_pH.ino`.   
 Nota2: Como este projeto vai servir para outra cadeira , nomeadamente `Projeto do 3º ANO`, aqui estão presentes mais elementos/sensores que o necessário. Contudo , o objetivo proposto foi alcançado e a presença de mais elementos nas imagens não implicam o não cumprimento do mesmo.
@@ -17,8 +17,11 @@ Equipamento usado:
 Plataformas usadas:
   - [Arduino](https://www.arduino.cc)
   - [ThethingsNetwork](https://www.thethingsnetwork.org)
-  - [Thingspeak](https://thingspeak.com)
+  - [ThingSpeak](https://thingspeak.com)
   - [Twitter](https://twitter.com/home)
+Perfis:
+  - [ThingSpeak](https://thingspeak.com/channels/1089865)
+  - [ThethingsNetwork](https://www.thethingsnetwork.org/u/m3adn)
 
 _____________________________________________________________
 
