@@ -154,4 +154,4 @@ Como já temos o valor em hexadecimal , podemos mandá-lo para a cloud. Para tal
 ```
 
 ## Melhorias
-O código foi melhorado ligeiramente em relação ao enviado noutras fases. Como não havia maneira de testar em casa , para enviar para a cloud foi definida a função 'modem.write(txBuffer);'. No entanto ao testar deparei-me que os valores enviados não correspondiam aos recebidos. A solução foi colocar a posição do array em que guardamos os dados sendo estas posições 'modem.write(txBuffer[0]);' e 'modem.write(txBuffer[1]);'
+O código foi melhorado ligeiramente em relação ao enviado noutras fases. Como não havia maneira de testar em casa , para enviar para a cloud foi definida a função `modem.write(txBuffer)`. No entanto ao testar deparei-me que os valores enviados não correspondiam aos recebidos. A solução foi colocar a posição do array em que guardamos os dados sendo estas posições `modem.write(txBuffer[0])` e `modem.write(txBuffer[1])`
