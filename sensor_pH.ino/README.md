@@ -4,7 +4,7 @@ Tal como as primeiras 3 partes do projeto foram feitas sem o sensor necessário 
 ________________________________
 
 ## Explicação do codigo:
-Esta parte serve para ligar o MKR1300 atravês do módulo LoRa à gateway,devolver o deviceEui para poder efetuar ligação com a gateway e aplicação da plataforma, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Usamos o appEui e AppKey fornecidos pela ThethingsNetwork para realizar a ligação à nossa aplicação na plataforma.
+Esta parte serve para ligar o MKR1300 atravês do módulo LoRa à gateway,devolver o deviceEui para poder efetuar o registo na aplicação da plataforma, avisar se estámos ligados à mesma ou não e posteriormente enviar os dados para a plataforma. Usamos o appEui e AppKey fornecidos pela ThethingsNetwork para realizar a ligação à nossa aplicação na plataforma.
 ```
 #include <MKRWAN.h> 
 LoRaModem modem(Serial);
